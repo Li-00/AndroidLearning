@@ -18,7 +18,9 @@ public class SecondActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-              finish();
+                Intent intent = new Intent(SecondActivity.this, FirstActivity.class);
+                startActivity(intent);
+//              finish();
             }
         });
         Intent intent = getIntent();
