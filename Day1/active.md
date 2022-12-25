@@ -10,3 +10,5 @@ Android 通过栈管理活动，调用 finish 方法时处于栈顶的活动出�
 深入理解安卓生命周期(https://www.jianshu.com/p/fb44584daee3)
 standard 默认每次启动一个新的活动
 singleTop  启动时注册并且不再创建新的活动
+singleTask 启动活动前在栈中检查该活动实例，有则将此活动上的所有活动出栈，没有则创建一个新的活动实例
+singleInstance 启用一个新的返回栈来管理活动
